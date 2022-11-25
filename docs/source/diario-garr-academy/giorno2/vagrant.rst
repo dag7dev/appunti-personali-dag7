@@ -20,12 +20,12 @@ https://www.redhat.com/en/topics/automation/what-is-provisioning
 Comandi principali
 ------------------
 
-``vagrant init``: inizializza un vagrantfile ``vagrant up/halt``:
-**accende** o **spegne** la VM ``vagrant provision``: **esegue il
-provisioner** configurato sulla VM ``vagrant ssh``: accesso da terminale
-``vagrant suspend/resume/destroy``: sospende, riprende, distrugge
-``vagrant rsync`` **sincronizza** i file della cartella condivisa da
-/vagrant locale a /vagrant sul guest della VM.
+- ``vagrant init``: inizializza un vagrantfile 
+- ``vagrant up/halt``: **accende** o **spegne** la VM
+- ``vagrant provision``: **esegue il provisioner** configurato sulla VM 
+- ``vagrant ssh``: accesso da terminale
+- ``vagrant suspend/resume/destroy``: sospende, riprende, distrugge
+- ``vagrant rsync`` **sincronizza** i file della cartella condivisa da /vagrant locale a /vagrant sul guest della VM.
 
 Vagrant file
 ------------
