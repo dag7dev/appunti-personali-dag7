@@ -1,34 +1,5 @@
-Lista dei giorni
-================
-
-.. toctree:: 
-    :glob:
-    :hidden:
-    
-    giorno1/index.rst
-    
-    giorno2/jinja.rst
-    giorno2/vagrant.rst
-
-    giorno3/ansible.rst
-    giorno3/yaml.rst
-
-    giorno5/docker.rst
-    giorno5/container.rst
-    giorno5/dockerfile.rst
-
-    giorno8/chaos.rst
-    giorno8/kuber.rst
-    giorno8/minikube.rst
-    giorno8/rbac.rst
-    giorno8/servacc.rst
-    
-    giorno9/influx.rst
-    giorno9/telegraf.rst
-    giorno9/tagvsfield.rst
-    giorno9/monitoring.rst
-    giorno13/cicd.rst
-
+--- Lista dei giorni ---
+========================
 
 Giorno 1
     Primo giorno di corso.
@@ -85,9 +56,8 @@ Giorno 3
 
     Cose interessanti
     - nel **file hosts** possiamo anche usare un **alias**, basta definirlo in una **colonna separata**
-        - se pinghi l'host con alias o seconda colonna, e host connesso, pinga
-    - in Ansible, quando fai gli inventory sugli ini, puoi usare una forma contratta tipo:
-        - `stage[1:2].garr.academy`
+    - se pinghi l'host con alias o seconda colonna, e host connesso, pinga
+    - in Ansible, quando fai gli inventory sugli ini, puoi usare una forma contratta tipo: `stage[1:2].garr.academy`
 
 
 Giorno 4

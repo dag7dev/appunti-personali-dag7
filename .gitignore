@@ -1,3 +1,5 @@
 venv/
 .vscode/
 Pipfile.lock
+build/
+_build

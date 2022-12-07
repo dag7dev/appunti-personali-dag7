@@ -1,8 +1,12 @@
 .. _monitoring:
+
+Monitoring
+==========
+
 Ottenere dati.
 
 TIG
-===
+---
 
 Acronimo che si divide in tre strumenti principali: - **T**\ elegraf:
 collettore - **I**\ nfluxDB: un db fatto apposta per storare dati
@@ -12,7 +16,7 @@ La caratteristica di questi strumenti è che sono programmabili tramite
 API, è possibile fare prove con Ansible.
 
 Ingredienti del sistema di monitoring
-=====================================
+-------------------------------------
 
 -  oggetto fisico o logico - che ha un sensore: un frigorifero che ha un
    termometro - la metrica è la temperatura

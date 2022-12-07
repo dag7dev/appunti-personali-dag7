@@ -30,7 +30,7 @@ Inventory
 -  Inventory contiene tutti i soggetti che Ansible ha.
 
    -  Tendenzialmente sono file ``.ini``, posso anche usare dei file
-      ``.yml``
+      ``.yaml``
 
 Ci sono diversi inventory: ``/etc/ansible/hosts`` -> predefinito
 ``<proj-path>/inventory_test.ini`` -> test
@@ -50,7 +50,7 @@ Struttura (``inventory_test``) se ho modificato il file hosts:
 
 Invece nell'hosts:
 
-.. code:: hosts
+.. code::
 
    192.168.56.2        stage1.garr.academy        stage1
    192.168.56.3        stage2.garr.academy        stage2
@@ -134,7 +134,7 @@ Il comando per eseguire un playbook:
 
 .. code:: bash
 
-   ansible-playbook my-academy-playbook.yml -i my-academy-inv.ini --private-key=$HOME/vagrant4academy/.vagrant/machines/stage1/virtualbox/private_key
+   ansible-playbook my-academy-playbook.yaml -i my-academy-inv.ini --private-key=$HOME/vagrant4academy/.vagrant/machines/stage1/virtualbox/private_key
 
 verbose mode
 ~~~~~~~~~~~~
@@ -180,15 +180,15 @@ Importare i task
 
 Il file principale:
 
-.. code:: yml
+.. code:: yaml
 
    tasks:
    - name: "Importa i task"
-     ansible.builtin.import_tasks: all-tasks.yml
+     ansible.builtin.import_tasks: all-tasks.yaml
 
 L'altro file con i moduli:
 
-.. code:: yml
+.. code:: yaml
 
    - ansible.builtin.debug:
        msg: "{{ ansible_default_ipv4['address'] }} ha {{ ansible_distribution }}"
@@ -211,11 +211,11 @@ loop non viene eseguito.
 
 Concetto di foreach (array semplice):
 
-.. code:: yml
+.. code:: yaml
 
    - name: Create users
        ansible.builtin.user:
-           name: `{{ item }}`
+           name: \`{{ item }}\`
            state: present
        loop:
            - vittoria
@@ -225,13 +225,13 @@ Concetto di foreach (array semplice):
 
 Concetto di foreach (array):
 
-.. code:: yml
+.. code:: yaml
 
    - name: Create users
        ansible.builtin.user:
-           name: `{{ item['name'] }}`
-           uid: `{{ item['uid'] }}`
-           groups: `{{ item['groups'] }}`
+           name: \`{{ item['name'] }}\`
+           uid: \`{{ item['uid'] }}\`
+           groups: \`{{ item['groups'] }}\`
            state: present
        loop:
            - { name: 'vittoria', uid: 1001, groups:'devOps'}

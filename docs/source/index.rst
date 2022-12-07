@@ -44,4 +44,5 @@ Tutti gli appunti sono rilasciati sotto `Licenza CC-BY-NC <https://creativecommo
    :hidden:
    :glob:
 
+   diario-garr-academy/giorno*/*
    diario-garr-academy/index.rst
