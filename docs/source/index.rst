@@ -40,9 +40,18 @@ Tutti gli appunti sono rilasciati sotto `Licenza CC-BY-NC <https://creativecommo
 
 .. toctree::
    :maxdepth: 2
+   :caption: Ansible
+   :hidden:
+   :glob:
+
+   ansible/*
+
+.. toctree::
+   :maxdepth: 2
    :caption: Garr Academy - Diario di bordo
    :hidden:
    :glob:
 
    diario-garr-academy/giorno*/*
    diario-garr-academy/index.rst
+
