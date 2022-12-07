@@ -44,7 +44,7 @@ Tutti gli appunti sono rilasciati sotto `Licenza CC-BY-NC <https://creativecommo
    :hidden:
    :glob:
 
-   ansible/*
+   ansible-notes/*
 
 .. toctree::
    :maxdepth: 2
