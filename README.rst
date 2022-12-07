@@ -1,5 +1,5 @@
-Diario di Bordo
-===============
+Appunti Personali
+=================
 
 Introduzione
 ------------
