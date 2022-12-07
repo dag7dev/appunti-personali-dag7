@@ -48,6 +48,14 @@ Tutti gli appunti sono rilasciati sotto `Licenza CC-BY-NC <https://creativecommo
 
 .. toctree::
    :maxdepth: 2
+   :caption: Dev
+   :hidden:
+   :glob:
+
+   dev/*
+
+.. toctree::
+   :maxdepth: 2
    :caption: Garr Academy - Diario di bordo
    :hidden:
    :glob:
