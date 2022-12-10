@@ -12,4 +12,5 @@ Installazione
 Dare questo comando da terminale:
 
 .. code::
+
     curl https://pyenv.run | bash
